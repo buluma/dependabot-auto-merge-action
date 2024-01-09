@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: buluma/dependabot-auto-merge-action@v2
         with:
           target: minor
           github-token: ${{ secrets.mytoken }}
@@ -27,7 +27,7 @@ Minimal setup:
 
 ```yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```
@@ -36,7 +36,7 @@ Only merge if the changed dependency version is a `patch` _(default behavior)_:
 
 ```yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       target: patch
       github-token: ${{ secrets.mytoken }}
@@ -46,7 +46,7 @@ Only merge if the changed dependency version is a `minor`:
 
 ```yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       target: minor
       github-token: ${{ secrets.mytoken }}
@@ -59,7 +59,7 @@ Using a configuration file:
 ```yaml
 steps:
   - uses: actions/checkout@v2
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```

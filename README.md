@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ahmadnassri/dependabot-auto-merge-action@v2
+      - uses: buluma/dependabot-auto-merge-action@v2
         with:
           target: minor
           github-token: ${{ secrets.mytoken }}
@@ -34,7 +34,7 @@ Minimal setup:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/dependabot-auto-merge-action@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```
@@ -43,7 +43,7 @@ Only merge if the changed dependency version is a `patch` *(default behavior)*:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/dependabot-auto-merge-action@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       target: patch
       github-token: ${{ secrets.mytoken }}
@@ -53,7 +53,7 @@ Only merge if the changed dependency version is a `minor`:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/dependabot-auto-merge-action@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       target: minor
       github-token: ${{ secrets.mytoken }}
@@ -66,7 +66,7 @@ Using a configuration file:
 ``` yaml
 steps:
   - uses: actions/checkout@v2
-  - uses: ahmadnassri/dependabot-auto-merge-action@v2
+  - uses: buluma/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```
@@ -197,11 +197,9 @@ if your config is anything other than `update_type: all`, or `update_type: semve
   [legacy dependaBot v1 config format]: https://dependabot.com/docs/config-file/#automerged_updates
 
 ----
-> Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
-> Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
 
 [license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/ahmadnassri/dependabot-auto-merge-action
+[license-img]: https://badgen.net/github/license/buluma/dependabot-auto-merge-action
 
 [release-url]: https://github.com/buluma/dependabot-auto-merge-action/releases
 [release-img]: https://badgen.net/github/release/buluma/dependabot-auto-merge-action
