@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: ahmadnassri/dependabot-auto-merge-action@v2
         with:
           target: minor
           github-token: ${{ secrets.mytoken }}
@@ -34,7 +34,7 @@ Minimal setup:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: ahmadnassri/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```
@@ -43,7 +43,7 @@ Only merge if the changed dependency version is a `patch` *(default behavior)*:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: ahmadnassri/dependabot-auto-merge-action@v2
     with:
       target: patch
       github-token: ${{ secrets.mytoken }}
@@ -53,7 +53,7 @@ Only merge if the changed dependency version is a `minor`:
 
 ``` yaml
 steps:
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: ahmadnassri/dependabot-auto-merge-action@v2
     with:
       target: minor
       github-token: ${{ secrets.mytoken }}
@@ -66,7 +66,7 @@ Using a configuration file:
 ``` yaml
 steps:
   - uses: actions/checkout@v2
-  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+  - uses: ahmadnassri/dependabot-auto-merge-action@v2
     with:
       github-token: ${{ secrets.mytoken }}
 ```
@@ -201,7 +201,7 @@ if your config is anything other than `update_type: all`, or `update_type: semve
 > Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
 
 [license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/ahmadnassri/action-dependabot-auto-merge
+[license-img]: https://badgen.net/github/license/ahmadnassri/dependabot-auto-merge-action
 
-[release-url]: https://github.com/ahmadnassri/action-dependabot-auto-merge/releases
-[release-img]: https://badgen.net/github/release/ahmadnassri/action-dependabot-auto-merge
+[release-url]: https://github.com/buluma/dependabot-auto-merge-action/releases
+[release-img]: https://badgen.net/github/release/buluma/dependabot-auto-merge-action
