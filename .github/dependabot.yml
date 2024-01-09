@@ -14,7 +14,7 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
 
   - package-ecosystem: github-actions
     open-pull-requests-limit: 10
@@ -38,7 +38,7 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
 
   - package-ecosystem: npm
     open-pull-requests-limit: 10
@@ -50,7 +50,7 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
 
   - package-ecosystem: bundler
     open-pull-requests-limit: 10
@@ -62,7 +62,7 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
 
   - package-ecosystem: terraform
     open-pull-requests-limit: 10
@@ -74,7 +74,7 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
 
   - package-ecosystem: docker
     open-pull-requests-limit: 10
@@ -86,4 +86,4 @@ updates:
     schedule:
       interval: daily
       time: "10:00"
-      timezone: America/Toronto
+      timezone: Africa/Nairobi
