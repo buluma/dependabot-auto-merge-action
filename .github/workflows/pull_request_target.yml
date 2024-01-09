@@ -7,8 +7,19 @@ on: pull_request_target
 name: pull_request_target
 
 permissions:
-  pull-requests: write
+  actions: write
+  checks: write
   contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
