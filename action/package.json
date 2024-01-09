@@ -3,9 +3,9 @@
   "name": "actions-dependabot-auto-merge",
   "version": "0.0.0-semantically-released",
   "author": {
-    "name": "Ahmad Nassri",
-    "email": "ahmad@ahmadnassri.com",
-    "url": "https://ahmadnassri.com"
+    "name": "Michael Buluma",
+    "email": "bulumaknight@gmail.com",
+    "url": "https://buluma.github.io"
   },
   "type": "module",
   "main": "index.js",

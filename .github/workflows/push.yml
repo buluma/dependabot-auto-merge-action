@@ -8,6 +8,8 @@ on:
 
 name: push
 
+permissions: write-all
+
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
 
