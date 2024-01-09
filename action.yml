@@ -1,4 +1,4 @@
-name: Dependabot Auto Merge
+name: Dependabot Auto Merge Action
 description: Automatically merge Dependabot PRs when version comparison is within range
 
 branding:
